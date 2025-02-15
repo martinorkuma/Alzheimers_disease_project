@@ -27,7 +27,7 @@ The data used in this project was collected and developed by [Rabie El Kharoua](
 
 ## Exploratory Data Analysis
 
-See file: alzheimers_disease_project.ipynb for full exploratory data analysis. 
+See file: [alzheimers_disease_project.ipynb](https://github.com/martinorkuma/Alzheimers_disease_project/blob/main/alzheimers_disease_project.ipynb) for full exploratory data analysis. 
 
 ```Python
 # I combined boxplots for Physical Activity and Diet Quality into one cell:
