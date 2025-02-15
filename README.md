@@ -25,7 +25,34 @@ This analysis uncovers patterns and relationships in the dataset, providing insi
 ### Data Source
 The data used in this project was collected and developed by [Rabie El Kharoua](https://www.kaggle.com/rabieelkharoua) as part of the [Alzheimer's Disease Dataset](https://www.kaggle.com/datasets/rabieelkharoua/alzheimers-disease-dataset/data) on Kaggle. It is synthetic and **for educational purposes only.** All data analyses and visualizations were performed using Python in JupyterLab Desktop. 
 
+## Exploratory Data Analysis
 
+See file: alzheimers_disease_project.ipynb for full exploratory data analysis. 
+
+```Python
+# I combined in boxplots for Physical Activity and Diet Quality into one cell:
+
+fig, axes = plt.subplots(1, 2, figsize=(14, 7))
+
+# Physical Activity
+sns.boxplot(data=df, x=df["Diagnosis"], y=df["PhysicalActivity"], 
+            hue="Diagnosis", palette=["lightblue", "gold"], ax=axes[0])
+axes[0].set_xlabel("Diagnosis (No Alzheimer’s Dx | Alzheimer’s Dx)")
+axes[0].set_ylabel("Physical Activity Score")
+axes[0].set_title("Physical Activity by Diagnosis")
+
+# Diet Quality
+sns.boxplot(data=df, x=df["Diagnosis"], y=df["DietQuality"], 
+            hue="Diagnosis", palette=["lightblue", "gold"], ax=axes[1])
+axes[1].set_xlabel("Diagnosis (No Alzheimer’s Dx | Alzheimer’s Dx)")
+axes[1].set_ylabel("Diet Quality Score")
+axes[1].set_title("Diet Quality by Diagnosis")
+
+plt.tight_layout()
+plt.show()
+```
+
+![Output1](https://github.com/user-attachments/assets/5d425cb7-787e-47e2-b7bc-c1234e748fd2)
 
 
 
