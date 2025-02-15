@@ -30,7 +30,7 @@ The data used in this project was collected and developed by [Rabie El Kharoua](
 See file: alzheimers_disease_project.ipynb for full exploratory data analysis. 
 
 ```Python
-# I combined in boxplots for Physical Activity and Diet Quality into one cell:
+# I combined boxplots for Physical Activity and Diet Quality into one cell:
 
 fig, axes = plt.subplots(1, 2, figsize=(14, 7))
 
